@@ -1,44 +1,111 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:app="http://schemas.android.com/apk/res-auto"
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:orientation="vertical"
-android:padding="16dp"
-tools:context=".MainActivity">
-<EditText
-    android:id="@+id/edit_text"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginBottom="16dp"
-    android:hint="Enter Text" />
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Pitch"
-    android:textSize="16sp" />
-<SeekBar
-    android:id="@+id/seek_bar_pitch"
-    android:layout_width="200dp"
-    android:layout_height="wrap_content"
-    android:progress="50" />
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Speed"
-    android:textSize="16sp" />
-<SeekBar
-    android:id="@+id/seek_bar_speed"
-    android:layout_width="200dp"
-    android:layout_height="wrap_content"
-    android:layout_marginBottom="16dp"
-    android:progress="50" />
-<Button
-    android:id="@+id/button_speak"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_gravity="center_horizontal"
-    android:enabled="false"
-    android:text="Say it!" />
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/txthablar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@color/azul"
+        android:hint="Ejemplo:  ¿Que hora es?"
+        android:textColor="@color/blanco"
+        android:textSize="24sp"
+        tools:text="¿Que hora es?" />
+
+    <Button
+        android:id="@+id/btnhablar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/azul"
+        android:enabled="true"
+        android:text="Hablar"
+        android:textColor="@color/blanco"
+        android:textSize="24sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/quinientospx" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tiempo"
+        android:textAllCaps="false"
+        android:textColor="@color/blanco"
+        android:textSize="@dimen/titulos" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/btnhora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/azul"
+            android:src="@drawable/ic_baseline_access_time_24"
+            android:textColor="@color/blanco"
+            android:textSize="@dimen/txtbotones" />
+
+        <ImageButton
+            android:id="@+id/btndia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/azul"
+            android:src="@drawable/ic_baseline_today_24"
+            android:textColor="@color/blanco"
+            android:textSize="@dimen/txtbotones" />
+    </TableRow>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cienpx" />
+
+    <Button
+        android:id="@+id/btnchiste"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/azul"
+        android:text="Chiste"
+        android:textColor="@color/blanco"
+        android:textSize="@dimen/txtbotones" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <SeekBar
+        android:id="@+id/seek_bar_pitch"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:progress="50" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Speed"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pitch"
+        android:textSize="16sp" />
+
+    <SeekBar
+        android:id="@+id/seek_bar_speed"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:progress="50" />
 </LinearLayout>
