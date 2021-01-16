@@ -36,10 +36,10 @@
         android:layout_height="@dimen/quinientospx" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Tiempo"
+        android:text="Buen dia"
         android:textAllCaps="false"
         android:textColor="@color/blanco"
         android:textSize="@dimen/titulos" />
@@ -65,6 +65,146 @@
             android:src="@drawable/ic_baseline_today_24"
             android:textColor="@color/blanco"
             android:textSize="@dimen/txtbotones" />
+
+        <ImageButton
+            android:id="@+id/btnclima"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/azul"
+            android:src="@drawable/ic_baseline_wb_sunny_24"
+            android:textColor="@color/blanco"
+            android:textSize="@dimen/txtbotones" />
+    </TableRow>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cienpx" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Musica"
+        android:textAllCaps="false"
+        android:textColor="@color/blanco"
+        android:textSize="@dimen/titulos" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/btnmusica"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/verdemusic"
+            android:src="@drawable/ic_baseline_music_note_24"
+            android:textColor="@color/blanco"
+            android:textSize="@dimen/txtbotones" />
+
+        <ImageButton
+            android:id="@+id/btnsubevolumen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/verdemusic"
+            android:src="@drawable/ic_baseline_volume_up_24"
+            android:textColor="@color/blanco"
+            android:textSize="@dimen/txtbotones" />
+
+        <ImageButton
+            android:id="@+id/btnmispistas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/verdemusic"
+            android:src="@drawable/ic_baseline_library_music_24"
+            android:textColor="@color/blanco"
+            android:textSize="@dimen/txtbotones" />
+
+        <ImageButton
+            android:id="@+id/btnanterior"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/verdemusic"
+            android:src="@drawable/ic_baseline_skip_previous_24"
+            android:textColor="@color/blanco"
+            android:textSize="@dimen/txtbotones" />
+
+        <ImageButton
+            android:id="@+id/btnpausa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/verdemusic"
+            android:src="@drawable/ic_baseline_pause_24"
+            android:textColor="@color/blanco"
+            android:textSize="@dimen/txtbotones" />
+
+        <ImageButton
+            android:id="@+id/btnsiguiente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/verdemusic"
+            android:src="@drawable/ic_baseline_skip_next_24"
+            android:textColor="@color/blanco"
+            android:textSize="@dimen/txtbotones" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageButton
+            android:id="@+id/btnpara"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/verdemusic"
+            android:src="@drawable/ic_baseline_music_off_24"
+            android:textColor="@color/blanco"
+            android:textSize="@dimen/txtbotones" />
+
+        <ImageButton
+            android:id="@+id/btnbajavolumen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/verdemusic"
+            android:src="@drawable/ic_baseline_volume_down_24"
+            android:textColor="@color/blanco"
+            android:textSize="@dimen/txtbotones" />
+
+        <ImageButton
+            android:id="@+id/btnqueestoyescuchando"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/verdemusic"
+            android:src="@drawable/ic_baseline_queue_music_24"
+            android:textColor="@color/blanco"
+            android:textSize="@dimen/txtbotones" />
+
+        <ImageButton
+            android:id="@+id/btnvolumen2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/verdemusic"
+            android:src="@drawable/ic_baseline_looks_two_24"
+            android:textColor="@color/blanco"
+            android:textSize="@dimen/txtbotones" />
+
+        <ImageButton
+            android:id="@+id/btnvolumen4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/verdemusic"
+            android:src="@drawable/ic_baseline_looks_4_24"
+            android:textColor="@color/blanco"
+            android:textSize="@dimen/txtbotones" />
+
+        <ImageButton
+            android:id="@+id/btnvolumen6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/verdemusic"
+            android:src="@drawable/ic_baseline_looks_6_24"
+            android:textColor="@color/blanco"
+            android:textSize="@dimen/txtbotones" />
     </TableRow>
 
     <Space
@@ -73,7 +213,7 @@
 
     <Button
         android:id="@+id/btnchiste"
-        android:layout_width="match_parent"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:background="@color/azul"
         android:text="Chiste"

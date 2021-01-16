@@ -91,29 +91,92 @@ public class MainActivity extends Activity implements View.OnClickListener {
     }
 
     private void initControl() {
+        //Buen dia
         ImageButton btnhora = (ImageButton) findViewById(R.id.btnhora);
         btnhora.setOnClickListener(this);
-
         ImageButton btndia = (ImageButton) findViewById(R.id.btndia);
         btndia.setOnClickListener(this);
+        ImageButton btnclima = (ImageButton) findViewById(R.id.btnclima);
+        btnclima.setOnClickListener(this);
 
+        //Musica
+        findViewById(R.id.btnmusica).setOnClickListener(this);
+        findViewById(R.id.btnpara).setOnClickListener(this);
+        findViewById(R.id.btnsubevolumen).setOnClickListener(this);
+        findViewById(R.id.btnbajavolumen).setOnClickListener(this);
+        findViewById(R.id.btnmispistas).setOnClickListener(this);
+        findViewById(R.id.btnqueestoyescuchando).setOnClickListener(this);
+        findViewById(R.id.btnanterior).setOnClickListener(this);
+        findViewById(R.id.btnpausa).setOnClickListener(this);
+        findViewById(R.id.btnsiguiente).setOnClickListener(this);
+        findViewById(R.id.btnvolumen2).setOnClickListener(this);
+        findViewById(R.id.btnvolumen4).setOnClickListener(this);
+        findViewById(R.id.btnvolumen6).setOnClickListener(this);
+
+
+
+        //Mas
         Button btnchiste = (Button) findViewById(R.id.btnchiste);
         btnchiste.setOnClickListener(this);
-
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
+            //Buen dia
             case R.id.btnhora:
                 speak2("¿Que hora es?");
                 break;
             case R.id.btndia:
                 speak2("¿Que dia es hoy?");
                 break;
+            case R.id.btnclima:
+                speak2("¿Cual es el clima de hoy?");
+                break;
+
+            //Musica
+            case R.id.btnmusica:
+                speak2("Pon musica");
+                break;
+            case R.id.btnpara:
+                speak2("Para la musica");
+                break;
+            case R.id.btnsubevolumen:
+                speak2("Sube el volumen");
+                break;
+            case R.id.btnbajavolumen:
+                speak2("Baja el volumen");
+                break;
+            case R.id.btnmispistas:
+                speak2("Pon mis pistas de spotify");
+                break;
+            case R.id.btnqueestoyescuchando:
+                speak2("Que estoy escuchando");
+                break;
+            case R.id.btnanterior:
+                speak2("anterior");
+                break;
+            case R.id.btnpausa:
+                speak2("pausa");
+                break;
+            case R.id.btnsiguiente:
+                speak2("siguiente");
+                break;
+            case R.id.btnvolumen2:
+                speak2("volumen 2");
+                break;
+            case R.id.btnvolumen4:
+                speak2("volumen 4");
+                break;
+            case R.id.btnvolumen6:
+                speak2("volumen 6");
+                break;
+
+            //Mas
             case R.id.btnchiste:
                 speak2("Cuentame un chiste");
                 break;
+
         }
     }
 }
